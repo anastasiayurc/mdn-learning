@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Start machine</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <button>Start machine</button>
+    <p>Machine stopped working</p>
+    <script>
+        var myButton = document.querySelector('button');
+        var myParagragh = document.querySelector('p');
+
+        function changeButtonText(){
+
+            if (myButton.textContent === 'Start machine'){
+                myButton.textContent = 'Stop machine';
+                myParagragh.textContent = 'Machine started working'
+            } else {
+                myButton.textContent = 'Start machine';
+                myParagragh.textContent = 'Machine stopped working';
+            }
+        }
+
+        myButton.addEventListener('click', changeButtonText);
+    </script>
+</body>
+</html>
